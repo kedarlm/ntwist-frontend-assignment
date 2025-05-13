@@ -1,0 +1,116 @@
+:root {
+  --primary: #004e92;
+  --secondary: #000428;
+  --accent: #00c9ff;
+  --white: #fefefe;
+  --gray: #ddd;
+  --radius: 10px;
+  --font: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  color: var(--white);
+}
+
+.sidebar {
+  width: 220px;
+  background: var(--secondary);
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.sidebar nav a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  margin: 8px 0;
+  transition: 0.3s;
+}
+
+
+.content {
+  margin-left: 240px;
+  padding: 30px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+form {
+  max-width:550px;
+  background: var(--white);
+  color: #333;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+form h1 {
+  color: var(--primary);
+}
+
+.form-group {
+  margin-bottom: 13px;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  color: var(--white);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: var(--white);
+  color: #333;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: var(--radius);
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background: var(--white);
+  color: #333;
+  border-radius: var(--radius);
+  margin-bottom: 5px;
+}
+
+details p {
+  padding: 10px;
+  background: #eee;
+  color: #222;
+  border-radius: var(--radius);
+  margin: 0;
+}
